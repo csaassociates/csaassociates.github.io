@@ -9,7 +9,7 @@
 body {
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:#f4f6fb;
+    background:#ffffff;
     color:#1A1A1A;
 }
 
@@ -48,35 +48,39 @@ nav a {
 .hero {
     background:linear-gradient(135deg,#0A1F44,#1d3c85);
     color:white;
-    padding:180px 20px;
+    padding:170px 20px;
     text-align:center;
-    position:relative;
 }
 
 .hero h1 {
     font-size:54px;
     margin-bottom:10px;
-    letter-spacing:1px;
 }
 
 .hero p {
     font-size:18px;
     margin-top:10px;
-    opacity:0.85;
+    opacity:0.9;
+}
+
+/* TRUST LINE */
+.trust {
+    margin-top:15px;
+    font-size:14px;
+    opacity:0.8;
+    letter-spacing:0.5px;
 }
 
 /* GOLD LINE */
-.hero::after {
-    content:"";
-    display:block;
+.gold-line {
     width:80px;
     height:3px;
     background:#C9A646;
-    margin:25px auto 0;
+    margin:25px auto;
 }
 
 .hero button {
-    margin-top:30px;
+    margin-top:25px;
     padding:14px 34px;
     background:#C9A646;
     border:none;
@@ -91,8 +95,10 @@ nav a {
     text-align:center;
 }
 
-.light-bg {
-    background:#f4f6fb;
+/* DARK SERVICES SECTION */
+.dark-section {
+    background:#0A1F44;
+    color:white;
 }
 
 /* GRID */
@@ -102,20 +108,19 @@ nav a {
     gap:30px;
 }
 
-/* PREMIUM CARDS */
+/* LIGHT PREMIUM CARDS */
 .card {
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(6px);
+    background:#ffffff;
+    color:#1A1A1A;
     padding:28px;
-    border-radius:16px;
-    border:1px solid rgba(0,0,0,0.06);
-    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+    border-radius:14px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
     transition:all 0.3s ease;
     text-align:left;
     position:relative;
 }
 
-/* GOLD ACCENT LINE */
+/* GOLD ACCENT */
 .card::before {
     content:"";
     position:absolute;
@@ -124,19 +129,18 @@ nav a {
     width:100%;
     height:3px;
     background:#C9A646;
-    border-radius:16px 16px 0 0;
+    border-radius:14px 14px 0 0;
 }
 
 .card:hover {
     transform:translateY(-8px);
-    box-shadow:0 25px 70px rgba(0,0,0,0.12);
+    box-shadow:0 25px 70px rgba(0,0,0,0.25);
 }
 
 .card b {
     display:block;
     margin-bottom:10px;
     color:#0A1F44;
-    font-size:16px;
 }
 
 /* CONTACT */
@@ -159,7 +163,7 @@ footer {
     background:#0A1F44;
     color:white;
     text-align:center;
-    padding:30px;
+    padding:40px;
 }
 </style>
 </head>
@@ -182,24 +186,36 @@ footer {
 <section class="hero">
 <h1>CSA & Associates</h1>
 <p>Corporate, Regulatory and Compliance Advisory Services</p>
-<p>Supporting businesses across corporate, regulatory and compliance matters</p>
+
+<div class="gold-line"></div>
+
+<p class="trust">Trusted advisory partner for corporate, regulatory and compliance matters</p>
+
 <button onclick="location.href='#contact'">Schedule Consultation</button>
 </section>
 
-<section class="section light-bg" id="services">
+<section class="section dark-section" id="services">
 <h2>Our Professional Services</h2>
 
 <div class="grid">
 
-<div class="card"><b>Corporate & Secretarial Compliance</b> Annual filings, meetings and governance support.</div>
-<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings and ROC compliance.</div>
-<div class="card"><b>Income Tax & GST</b> Tax returns and GST compliance.</div>
-<div class="card"><b>Company Incorporation</b> Private, Public, Section 8 and Producer companies.</div>
-<div class="card"><b>IPO & SEBI Compliance</b> Listing and regulatory compliance.</div>
-<div class="card"><b>FEMA & RBI Advisory</b> FDI, FEMA and NBFC advisory.</div>
-<div class="card"><b>Corporate Restructuring</b> Mergers and restructuring.</div>
-<div class="card"><b>Secretarial Audit</b> Compliance audits and due diligence.</div>
-<div class="card"><b>IBC & Insolvency</b> CIRP and liquidation advisory.</div>
+<div class="card"><b>Corporate & Secretarial Compliance</b> Annual ROC filings, board and shareholder meetings, statutory registers and governance support.</div>
+
+<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings, annual returns and event-based compliance under Companies Act.</div>
+
+<div class="card"><b>Income Tax & GST</b> Income tax return filing, GST registration, returns and regulatory compliance support.</div>
+
+<div class="card"><b>Company Incorporation</b> Incorporation of Private, Public, Section 8 and Producer Companies.</div>
+
+<div class="card"><b>IPO & SEBI Compliance</b> Pre and post listing compliance, due diligence and SEBI related advisory.</div>
+
+<div class="card"><b>FEMA & RBI Advisory</b> Foreign investment compliance, FEMA regulations and NBFC advisory.</div>
+
+<div class="card"><b>Corporate Restructuring</b> Mergers, demergers and restructuring advisory services.</div>
+
+<div class="card"><b>Secretarial Audit & Due Diligence</b> Secretarial audits, compliance review and due diligence.</div>
+
+<div class="card"><b>IBC & Insolvency Services</b> Advisory in CIRP, liquidation process and insolvency compliance.</div>
 
 </div>
 </section>
