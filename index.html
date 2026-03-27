@@ -48,6 +48,179 @@ nav a {
 .hero {
     background:linear-gradient(135deg,#0A1F44,#1d3c85);
     color:white;
-    padding:160px 20px;
+    padding:180px 20px;
+    text-align:center;
+    position:relative;
+}
+
+.hero h1 {
+    font-size:54px;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.hero p {
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.85;
+}
+
+/* GOLD LINE */
+.hero::after {
+    content:"";
+    display:block;
+    width:80px;
+    height:3px;
+    background:#C9A646;
+    margin:25px auto 0;
+}
+
+.hero button {
+    margin-top:30px;
+    padding:14px 34px;
+    background:#C9A646;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+/* SECTION */
+.section {
+    padding:110px 10%;
     text-align:center;
 }
+
+.light-bg {
+    background:#f4f6fb;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* PREMIUM CARDS */
+.card {
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(6px);
+    padding:28px;
+    border-radius:16px;
+    border:1px solid rgba(0,0,0,0.06);
+    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+    text-align:left;
+    position:relative;
+}
+
+/* GOLD ACCENT LINE */
+.card::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:#C9A646;
+    border-radius:16px 16px 0 0;
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 25px 70px rgba(0,0,0,0.12);
+}
+
+.card b {
+    display:block;
+    margin-bottom:10px;
+    color:#0A1F44;
+    font-size:16px;
+}
+
+/* CONTACT */
+input, textarea {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+}
+
+button.submit {
+    background:#0A1F44;
+    color:white;
+    padding:12px 25px;
+    border:none;
+}
+
+/* FOOTER */
+footer {
+    background:#0A1F44;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="Logo.png" alt="CSA Logo">
+<h3>CSA & Associates</h3>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>CSA & Associates</h1>
+<p>Corporate, Regulatory and Compliance Advisory Services</p>
+<p>Supporting businesses across corporate, regulatory and compliance matters</p>
+<button onclick="location.href='#contact'">Schedule Consultation</button>
+</section>
+
+<section class="section light-bg" id="services">
+<h2>Our Professional Services</h2>
+
+<div class="grid">
+
+<div class="card"><b>Corporate & Secretarial Compliance</b> Annual filings, meetings and governance support.</div>
+<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings and ROC compliance.</div>
+<div class="card"><b>Income Tax & GST</b> Tax returns and GST compliance.</div>
+<div class="card"><b>Company Incorporation</b> Private, Public, Section 8 and Producer companies.</div>
+<div class="card"><b>IPO & SEBI Compliance</b> Listing and regulatory compliance.</div>
+<div class="card"><b>FEMA & RBI Advisory</b> FDI, FEMA and NBFC advisory.</div>
+<div class="card"><b>Corporate Restructuring</b> Mergers and restructuring.</div>
+<div class="card"><b>Secretarial Audit</b> Compliance audits and due diligence.</div>
+<div class="card"><b>IBC & Insolvency</b> CIRP and liquidation advisory.</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<form action="https://formspree.io/f/mlgoddwb" method="POST">
+<input type="text" name="Name" placeholder="Name" required>
+<input type="email" name="Email" placeholder="Email" required>
+<input type="tel" name="Phone" placeholder="Phone">
+<textarea name="Message" placeholder="Message"></textarea>
+<button class="submit" type="submit">Submit</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 CSA & Associates. All Rights Reserved.</p>
+<p>Email: csagarwal.associates@gmail.com | Phone: 8755916273</p>
+</footer>
+
+</body>
+</html>
