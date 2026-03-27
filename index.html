@@ -9,7 +9,7 @@
 body {
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:#ffffff;
+    background:#f4f6fb;
     color:#1A1A1A;
 }
 
@@ -18,7 +18,7 @@ header {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 80px;
+    padding:20px 90px;
     background:#0A1F44;
     color:white;
 }
@@ -29,177 +29,25 @@ header {
 }
 
 .logo img {
-    height:50px;
+    height:52px;
     background:white;
-    padding:5px;
-    border-radius:6px;
-    margin-right:10px;
+    padding:6px;
+    border-radius:8px;
+    margin-right:12px;
 }
 
 nav a {
     color:white;
-    margin-left:25px;
+    margin-left:30px;
     text-decoration:none;
     font-size:14px;
+    opacity:0.9;
 }
 
 /* HERO */
 .hero {
-    background:linear-gradient(135deg,#0A1F44,#162F6B);
+    background:linear-gradient(135deg,#0A1F44,#1d3c85);
     color:white;
-    padding:140px 20px;
+    padding:160px 20px;
     text-align:center;
 }
-
-.hero h1 {
-    font-size:48px;
-}
-
-.hero p {
-    font-size:18px;
-    margin-top:10px;
-    opacity:0.9;
-}
-
-.hero button {
-    margin-top:25px;
-    padding:14px 32px;
-    background:#C9A646;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-/* SECTION */
-.section {
-    padding:100px 10%;
-    text-align:center;
-}
-
-/* ALTERNATE BACKGROUND */
-.light-bg {
-    background:#f3f5f9;
-}
-
-/* GRID */
-.grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-/* CARD */
-.card {
-    background:#ffffff;
-    padding:25px;
-    border-radius:14px;
-    box-shadow:0 15px 45px rgba(0,0,0,0.08);
-    border:1px solid rgba(0,0,0,0.05);
-    transition:0.3s;
-    text-align:left;
-}
-
-.card:hover {
-    transform:translateY(-6px);
-    box-shadow:0 20px 60px rgba(0,0,0,0.12);
-}
-
-.card b {
-    display:block;
-    margin-bottom:10px;
-    color:#0A1F44;
-}
-
-/* CONTACT */
-input, textarea {
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-}
-
-button.submit {
-    background:#0A1F44;
-    color:white;
-    padding:12px 25px;
-    border:none;
-}
-
-/* FOOTER */
-footer {
-    background:#0A1F44;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">
-<img src="Logo.png" alt="CSA Logo">
-<h3>CSA & Associates</h3>
-</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section class="hero">
-<h1>CSA & Associates</h1>
-<p>Corporate, Regulatory and Compliance Advisory Services</p>
-<p style="opacity:0.8;">Supporting businesses in regulatory, corporate and compliance matters across India</p>
-<button onclick="location.href='#contact'">Schedule Consultation</button>
-</section>
-
-<section class="section light-bg" id="services">
-<h2>Our Professional Services</h2>
-
-<div class="grid">
-
-<div class="card"><b>Corporate & Secretarial Compliance</b> Annual ROC filings, board and shareholder meetings, statutory registers and governance support.</div>
-
-<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings, annual returns and event-based compliance under Companies Act.</div>
-
-<div class="card"><b>Income Tax & GST</b> Income tax return filing, GST registration, returns and regulatory compliance support.</div>
-
-<div class="card"><b>Company Incorporation</b> Incorporation of Private, Public, Section 8 and Producer Companies.</div>
-
-<div class="card"><b>IPO & SEBI Compliance</b> Pre and post listing compliance, due diligence and SEBI related advisory.</div>
-
-<div class="card"><b>FEMA & RBI Advisory</b> Foreign investment compliance, FEMA regulations and NBFC advisory.</div>
-
-<div class="card"><b>Corporate Restructuring</b> Mergers, demergers and restructuring advisory services.</div>
-
-<div class="card"><b>Secretarial Audit & Due Diligence</b> Secretarial audits, compliance review and due diligence.</div>
-
-<div class="card"><b>IBC & Insolvency Services</b> Advisory in CIRP, liquidation process and insolvency compliance.</div>
-
-</div>
-</section>
-
-<section class="section" id="contact">
-<h2>Contact Us</h2>
-
-<form action="https://formspree.io/f/mlgoddwb" method="POST">
-<input type="text" name="Name" placeholder="Name" required>
-<input type="email" name="Email" placeholder="Email" required>
-<input type="tel" name="Phone" placeholder="Phone">
-<textarea name="Message" placeholder="Message"></textarea>
-<button class="submit" type="submit">Submit</button>
-</form>
-
-</section>
-
-<footer>
-<p>© 2026 CSA & Associates. All Rights Reserved.</p>
-<p>Email: csagarwal.associates@gmail.com | Phone: 8755916273</p>
-</footer>
-
-</body>
-</html>
