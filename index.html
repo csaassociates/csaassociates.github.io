@@ -1,124 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSA & Associates</title>
-
-<style>
-body {margin:0;font-family:'Segoe UI';background:#0b132b;color:white;}
-header {display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:#0A1F44;}
-.logo {display:flex;align-items:center;}
-.logo img {height:50px;margin-right:10px;}
-nav a {color:white;margin-left:25px;text-decoration:none;}
-
-.hero {padding:140px 20px;text-align:center;background:linear-gradient(#0A1F44,#1f3c88);}
-.hero h1 {font-size:46px;}
-
-button {padding:15px 30px;background:gold;border:none;cursor:pointer;margin-top:20px;}
-
-.section {padding:70px 10%;text-align:center;}
-.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
-
-.card {
-background:rgba(255,255,255,0.08);
-padding:25px;border-radius:12px;
-transition:0.3s;
-}
-.card:hover {transform:translateY(-8px);background:rgba(255,255,255,0.15);}
-
-h3.category {margin-top:40px;color:gold;}
-
-footer {background:black;text-align:center;padding:30px;}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">
-<img src="Logo.png">
-<h3>CSA & Associates</h3>
-</div>
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section class="hero">
-<h1>CSA & Associates – Strategic Corporate & Regulatory Advisory</h1>
-<p>Experts in SEBI, RBI, FEMA, IBC, XBRL & Corporate Law Compliance</p>
-<button onclick="location.href='#contact'">Schedule Consultation</button>
-</section>
-
 <section class="section" id="services">
 <h2>Our Professional Services</h2>
 
-<h3 class="category">Corporate & ROC Compliance</h3>
+<!-- 1. SECRETARIAL (TOP) -->
+<h3 class="category">Corporate & Secretarial Compliance</h3>
 <div class="grid">
 <div class="card">Annual ROC Filings & Compliance</div>
 <div class="card">Board & Shareholder Meeting Compliance</div>
 <div class="card">Maintenance of Statutory Registers</div>
+<div class="card">Corporate Governance & Advisory</div>
+</div>
+
+<!-- 2. ROC + XBRL -->
+<h3 class="category">ROC & XBRL Compliance</h3>
+<div class="grid">
 <div class="card">XBRL Filing & Compliance</div>
+<div class="card">Annual Return & Financial Filing</div>
+<div class="card">Event-Based ROC Filings</div>
 </div>
 
-<h3 class="category">Capital Market & SEBI Advisory</h3>
-<div class="grid">
-<div class="card">IPO Advisory (Pre & Post Listing)</div>
-<div class="card">SEBI Listing Regulations Compliance</div>
-<div class="card">Corporate Governance Advisory</div>
-</div>
-
-<h3 class="category">IBC & Insolvency Services</h3>
-<div class="grid">
-<div class="card">CIRP Advisory</div>
-<div class="card">Liquidation Process Advisory</div>
-<div class="card">Documentation & Compliance under IBC</div>
-</div>
-
+<!-- 3. TAX -->
 <h3 class="category">Tax & Regulatory Services</h3>
 <div class="grid">
 <div class="card">Income Tax Return (ITR) Filing</div>
 <div class="card">GST Registration & Compliance</div>
-<div class="card">Tax Advisory & Planning</div>
+<div class="card">Tax Planning & Advisory</div>
 </div>
 
-<h3 class="category">Incorporation & Structuring</h3>
+<!-- 4. INCORPORATION -->
+<h3 class="category">Company Incorporation & Structuring</h3>
 <div class="grid">
 <div class="card">Private & Public Company Incorporation</div>
 <div class="card">Section 8 & Producer Company Setup</div>
-<div class="card">NBFC Registration & RBI Advisory</div>
-<div class="card">FEMA & FDI Advisory</div>
+<div class="card">Startup & Business Structuring</div>
 </div>
 
-<h3 class="category">Corporate Advisory</h3>
+<!-- 5. SEBI -->
+<h3 class="category">Capital Market & SEBI Advisory</h3>
+<div class="grid">
+<div class="card">IPO Advisory (Pre & Post Listing)</div>
+<div class="card">SEBI Listing Compliance</div>
+<div class="card">Due Diligence & Certifications</div>
+</div>
+
+<!-- 6. FEMA / NBFC -->
+<h3 class="category">FEMA, FDI & RBI Advisory</h3>
+<div class="grid">
+<div class="card">FEMA & FDI Compliance</div>
+<div class="card">NBFC Registration & RBI Advisory</div>
+<div class="card">Foreign Investment Structuring</div>
+</div>
+
+<!-- 7. CORPORATE ADVISORY -->
+<h3 class="category">Corporate Advisory & Restructuring</h3>
 <div class="grid">
 <div class="card">Mergers & Demergers</div>
 <div class="card">Corporate Restructuring</div>
 <div class="card">Secretarial Audit & Due Diligence</div>
 </div>
 
-</section>
-
-<section class="section" id="contact">
-<h2>Contact Us</h2>
-
-<form action="https://formspree.io/f/mlgoddwb" method="POST">
-<input type="text" name="Name" placeholder="Name" required>
-<input type="email" name="Email" placeholder="Email" required>
-<input type="tel" name="Phone" placeholder="Phone">
-<textarea name="Message" placeholder="Message"></textarea>
-<button type="submit">Submit</button>
-</form>
+<!-- 8. IBC LAST -->
+<h3 class="category">IBC & Insolvency Services</h3>
+<div class="grid">
+<div class="card">CIRP Advisory</div>
+<div class="card">Liquidation Process Advisory</div>
+<div class="card">IBC Compliance & Documentation</div>
+</div>
 
 </section>
-
-<footer>
-CSA & Associates | Company Secretaries <br>
-Email: csagarwal.associates@gmail.com | Phone: 8755916273
-</footer>
-
-</body>
-</html>
