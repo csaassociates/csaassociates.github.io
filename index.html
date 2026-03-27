@@ -6,100 +6,30 @@
 <title>CSA & Associates</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0b132b;
-    color: white;
-}
+body {margin:0;font-family:'Segoe UI';background:#0b132b;color:white;}
+header {display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:#0A1F44;}
+.logo {display:flex;align-items:center;}
+.logo img {height:50px;margin-right:10px;}
+nav a {color:white;margin-left:25px;text-decoration:none;}
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background: rgba(10,31,68,0.95);
-}
+.hero {padding:140px 20px;text-align:center;background:linear-gradient(#0A1F44,#1f3c88);}
+.hero h1 {font-size:46px;}
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+button {padding:15px 30px;background:gold;border:none;cursor:pointer;margin-top:20px;}
 
-.logo img {
-    height: 55px;
-    margin-right: 10px;
-}
+.section {padding:70px 10%;text-align:center;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
 
-nav a {
-    color: white;
-    margin-left: 25px;
-    text-decoration: none;
-}
-
-/* HERO */
-.hero {
-    padding: 140px 20px;
-    text-align: center;
-    background: linear-gradient(135deg,#0A1F44,#1f3c88);
-}
-
-.hero h1 { font-size: 46px; }
-
-/* BUTTON */
-button {
-    padding: 15px 30px;
-    background: gold;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background: white;
-    color:#0A1F44;
-}
-
-/* SECTION */
-.section {
-    padding: 80px 10%;
-    text-align: center;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
-}
-
-/* CARD */
 .card {
-    background: rgba(255,255,255,0.08);
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s;
+background:rgba(255,255,255,0.08);
+padding:25px;border-radius:12px;
+transition:0.3s;
 }
+.card:hover {transform:translateY(-8px);background:rgba(255,255,255,0.15);}
 
-.card:hover {
-    transform: translateY(-8px);
-    background: rgba(255,255,255,0.15);
-}
+h3.category {margin-top:40px;color:gold;}
 
-/* CONTACT */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-}
-
-/* FOOTER */
-footer {
-    background: black;
-    text-align: center;
-    padding: 30px;
-}
+footer {background:black;text-align:center;padding:30px;}
 </style>
 </head>
 
@@ -107,10 +37,9 @@ footer {
 
 <header>
 <div class="logo">
-    <img src="Logo.png">
-    <h3>CSA & Associates</h3>
+<img src="Logo.png">
+<h3>CSA & Associates</h3>
 </div>
-
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
@@ -127,59 +56,50 @@ footer {
 <section class="section" id="services">
 <h2>Our Professional Services</h2>
 
+<h3 class="category">Corporate & ROC Compliance</h3>
 <div class="grid">
-
-<div class="card">
-<h4>IBC & Liquidation Advisory</h4>
-<p>CIRP, liquidation process, compliance, documentation and stakeholder coordination.</p>
+<div class="card">Annual ROC Filings & Compliance</div>
+<div class="card">Board & Shareholder Meeting Compliance</div>
+<div class="card">Maintenance of Statutory Registers</div>
+<div class="card">XBRL Filing & Compliance</div>
 </div>
 
-<div class="card">
-<h4>IPO & Listing Compliance</h4>
-<p>Pre and post IPO secretarial compliances, due diligence, listing regulations and SEBI advisory.</p>
+<h3 class="category">Capital Market & SEBI Advisory</h3>
+<div class="grid">
+<div class="card">IPO Advisory (Pre & Post Listing)</div>
+<div class="card">SEBI Listing Regulations Compliance</div>
+<div class="card">Corporate Governance Advisory</div>
 </div>
 
-<div class="card">
-<h4>Company Incorporation</h4>
-<p>Private, Public, Section 8 and Producer Company incorporation with complete regulatory setup.</p>
+<h3 class="category">IBC & Insolvency Services</h3>
+<div class="grid">
+<div class="card">CIRP Advisory</div>
+<div class="card">Liquidation Process Advisory</div>
+<div class="card">Documentation & Compliance under IBC</div>
 </div>
 
-<div class="card">
-<h4>GST Registration & Compliance</h4>
-<p>GST registration, return filing and advisory services.</p>
+<h3 class="category">Tax & Regulatory Services</h3>
+<div class="grid">
+<div class="card">Income Tax Return (ITR) Filing</div>
+<div class="card">GST Registration & Compliance</div>
+<div class="card">Tax Advisory & Planning</div>
 </div>
 
-<div class="card">
-<h4>Income Tax Return (ITR)</h4>
-<p>ITR filing for individuals, firms and companies with tax planning and advisory.</p>
+<h3 class="category">Incorporation & Structuring</h3>
+<div class="grid">
+<div class="card">Private & Public Company Incorporation</div>
+<div class="card">Section 8 & Producer Company Setup</div>
+<div class="card">NBFC Registration & RBI Advisory</div>
+<div class="card">FEMA & FDI Advisory</div>
 </div>
 
-<div class="card">
-<h4>XBRL Filing & ROC Compliance</h4>
-<p>Preparation and filing of XBRL returns, annual ROC filings, and corporate compliance management.</p>
+<h3 class="category">Corporate Advisory</h3>
+<div class="grid">
+<div class="card">Mergers & Demergers</div>
+<div class="card">Corporate Restructuring</div>
+<div class="card">Secretarial Audit & Due Diligence</div>
 </div>
 
-<div class="card">
-<h4>NBFC & RBI Advisory</h4>
-<p>NBFC registration, RBI compliance and structuring advisory.</p>
-</div>
-
-<div class="card">
-<h4>FEMA & FDI Advisory</h4>
-<p>Foreign investment structuring, ODI, FDI and FEMA compliance.</p>
-</div>
-
-<div class="card">
-<h4>Corporate Restructuring</h4>
-<p>Mergers, demergers, restructuring and regulatory approvals.</p>
-</div>
-
-<div class="card">
-<h4>Secretarial Audit & Due Diligence</h4>
-<p>Audit, compliance checks and due diligence services.</p>
-</div>
-
-</div>
 </section>
 
 <section class="section" id="contact">
