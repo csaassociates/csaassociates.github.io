@@ -1,139 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSA & Associates</title>
-
 <style>
 body {
     margin:0;
-    font-family:Arial, sans-serif;
-    color:#222;
+    font-family:'Segoe UI';
+    background:#0b132b;
+    color:white;
 }
 
 /* HEADER */
 header {
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    padding:15px 80px;
+    padding:20px 80px;
     background:#0A1F44;
-    color:white;
 }
-
-.logo {display:flex;align-items:center;}
-.logo img {height:40px;margin-right:10px;}
 
 nav a {
     color:white;
-    margin-left:20px;
-    text-decoration:none;
+    margin-left:25px;
 }
 
 /* HERO */
 .hero {
-    background:#0A1F44;
-    color:white;
-    padding:100px 20px;
+    padding:140px 20px;
     text-align:center;
+    background:linear-gradient(135deg,#0A1F44,#1f3c88);
 }
 
-.hero h1 {font-size:36px;}
-.hero button {
-    margin-top:15px;
-    padding:10px 20px;
-    background:#d4af37;
-    border:none;
-}
+.hero h1 {font-size:48px;}
 
 /* SECTION */
-.section {padding:60px 10%;}
+.section {padding:80px 10%;text-align:center;}
 
-/* SERVICES GRID */
+/* GRID */
 .grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
+/* CARD */
 .card {
-    background:#f2f4f8;
-    padding:20px;
-    border-radius:6px;
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
 }
 
 /* FOOTER */
 footer {
-    background:#0A1F44;
-    color:white;
+    background:black;
     text-align:center;
-    padding:20px;
+    padding:25px;
 }
 </style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">
-<img src="Logo.png">
-<h3>CSA & Associates</h3>
-</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section class="hero">
-<h1>CSA & Associates</h1>
-<p>Corporate, Regulatory & Compliance Advisory</p>
-<button onclick="location.href='#contact'">Contact Us</button>
-</section>
-
-<section class="section" id="services">
-<h2>Our Services</h2>
-
-<div class="grid">
-
-<div class="card"><b>Corporate Compliance</b><br>ROC filings, meetings, registers</div>
-
-<div class="card"><b>XBRL & ROC</b><br>Annual & event based filings</div>
-
-<div class="card"><b>Income Tax & GST</b><br>ITR, GST returns & advisory</div>
-
-<div class="card"><b>Company Incorporation</b><br>Private, Public, Section 8</div>
-
-<div class="card"><b>IPO & SEBI</b><br>Listing & compliance</div>
-
-<div class="card"><b>FEMA & NBFC</b><br>FDI, RBI advisory</div>
-
-<div class="card"><b>Restructuring</b><br>Mergers & corporate advisory</div>
-
-<div class="card"><b>IBC & Liquidation</b><br>Insolvency & CIRP</div>
-
-</div>
-
-</section>
-
-<section class="section" id="contact">
-<h2>Contact</h2>
-
-<form action="https://formspree.io/f/mlgoddwb" method="POST">
-<input type="text" placeholder="Name"><br>
-<input type="email" placeholder="Email"><br>
-<textarea placeholder="Message"></textarea><br>
-<button type="submit">Submit</button>
-</form>
-
-</section>
-
-<footer>
-<p>© 2026 CSA & Associates. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
