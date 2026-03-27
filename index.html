@@ -8,7 +8,7 @@
 <style>
 body {
     margin:0;
-    font-family: 'Segoe UI', Arial;
+    font-family:Arial, sans-serif;
     color:#222;
 }
 
@@ -17,92 +17,50 @@ header {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 80px;
+    padding:15px 80px;
     background:#0A1F44;
     color:white;
 }
 
-.logo {
-    display:flex;
-    align-items:center;
-}
-
-.logo img {
-    height:45px;
-    margin-right:10px;
-}
+.logo {display:flex;align-items:center;}
+.logo img {height:40px;margin-right:10px;}
 
 nav a {
     color:white;
-    margin-left:25px;
+    margin-left:20px;
     text-decoration:none;
-    font-size:14px;
 }
 
 /* HERO */
 .hero {
     background:#0A1F44;
     color:white;
-    padding:120px 20px;
+    padding:100px 20px;
     text-align:center;
 }
 
-.hero h1 {
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.hero p {
-    font-size:16px;
-    opacity:0.9;
-}
-
+.hero h1 {font-size:36px;}
 .hero button {
-    margin-top:20px;
-    padding:12px 25px;
+    margin-top:15px;
+    padding:10px 20px;
     background:#d4af37;
     border:none;
-    cursor:pointer;
 }
 
 /* SECTION */
-.section {
-    padding:70px 10%;
-}
+.section {padding:60px 10%;}
 
-.section h2 {
-    text-align:center;
-    margin-bottom:40px;
-}
-
-/* SERVICES */
-.service-category {
-    margin-bottom:40px;
-}
-
-.service-category h3 {
-    margin-bottom:15px;
-    color:#0A1F44;
-}
-
-.service-list {
+/* SERVICES GRID */
+.grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
 }
 
-.service-list div {
-    background:#f5f7fa;
-    padding:15px;
+.card {
+    background:#f2f4f8;
+    padding:20px;
     border-radius:6px;
-    font-size:14px;
-}
-
-/* CONTACT */
-input, textarea {
-    width:100%;
-    padding:10px;
-    margin:8px 0;
 }
 
 /* FOOTER */
@@ -110,8 +68,7 @@ footer {
     background:#0A1F44;
     color:white;
     text-align:center;
-    padding:25px;
-    font-size:14px;
+    padding:20px;
 }
 </style>
 </head>
@@ -123,6 +80,7 @@ footer {
 <img src="Logo.png">
 <h3>CSA & Associates</h3>
 </div>
+
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
@@ -131,104 +89,50 @@ footer {
 </header>
 
 <section class="hero">
-<h1>CSA & Associates – Strategic Corporate Advisory</h1>
-<p>Experts in SEBI, RBI, FEMA, IBC & Corporate Law Compliance</p>
-<button onclick="location.href='#contact'">Schedule Consultation</button>
+<h1>CSA & Associates</h1>
+<p>Corporate, Regulatory & Compliance Advisory</p>
+<button onclick="location.href='#contact'">Contact Us</button>
 </section>
 
 <section class="section" id="services">
+<h2>Our Services</h2>
 
-<h2>Our Professional Services</h2>
+<div class="grid">
 
-<div class="service-category">
-<h3>Corporate & Secretarial Compliance</h3>
-<div class="service-list">
-<div>Annual ROC Filings</div>
-<div>Board & Shareholder Meetings</div>
-<div>Statutory Registers Maintenance</div>
-<div>Corporate Governance Advisory</div>
-</div>
-</div>
+<div class="card"><b>Corporate Compliance</b><br>ROC filings, meetings, registers</div>
 
-<div class="service-category">
-<h3>ROC & XBRL</h3>
-<div class="service-list">
-<div>XBRL Filing</div>
-<div>Annual Return Filing</div>
-<div>Event-Based Compliance</div>
-</div>
-</div>
+<div class="card"><b>XBRL & ROC</b><br>Annual & event based filings</div>
 
-<div class="service-category">
-<h3>Tax Services</h3>
-<div class="service-list">
-<div>Income Tax Return (ITR)</div>
-<div>GST Registration & Returns</div>
-<div>Tax Planning Advisory</div>
-</div>
-</div>
+<div class="card"><b>Income Tax & GST</b><br>ITR, GST returns & advisory</div>
 
-<div class="service-category">
-<h3>Incorporation</h3>
-<div class="service-list">
-<div>Private & Public Company</div>
-<div>Section 8 Company</div>
-<div>Producer Company</div>
-</div>
-</div>
+<div class="card"><b>Company Incorporation</b><br>Private, Public, Section 8</div>
 
-<div class="service-category">
-<h3>Capital Market</h3>
-<div class="service-list">
-<div>IPO Advisory</div>
-<div>SEBI Compliance</div>
-<div>Due Diligence</div>
-</div>
-</div>
+<div class="card"><b>IPO & SEBI</b><br>Listing & compliance</div>
 
-<div class="service-category">
-<h3>FEMA & RBI</h3>
-<div class="service-list">
-<div>FDI / ODI Compliance</div>
-<div>NBFC Advisory</div>
-<div>Foreign Investment Structuring</div>
-</div>
-</div>
+<div class="card"><b>FEMA & NBFC</b><br>FDI, RBI advisory</div>
 
-<div class="service-category">
-<h3>Corporate Advisory</h3>
-<div class="service-list">
-<div>Mergers & Demergers</div>
-<div>Restructuring</div>
-<div>Secretarial Audit</div>
-</div>
-</div>
+<div class="card"><b>Restructuring</b><br>Mergers & corporate advisory</div>
 
-<div class="service-category">
-<h3>IBC & Insolvency</h3>
-<div class="service-list">
-<div>CIRP Advisory</div>
-<div>Liquidation Process</div>
-<div>IBC Compliance</div>
-</div>
+<div class="card"><b>IBC & Liquidation</b><br>Insolvency & CIRP</div>
+
 </div>
 
 </section>
 
 <section class="section" id="contact">
-<h2>Contact Us</h2>
+<h2>Contact</h2>
 
 <form action="https://formspree.io/f/mlgoddwb" method="POST">
-<input type="text" name="Name" placeholder="Name" required>
-<input type="email" name="Email" placeholder="Email" required>
-<textarea name="Message" placeholder="Message"></textarea>
+<input type="text" placeholder="Name"><br>
+<input type="email" placeholder="Email"><br>
+<textarea placeholder="Message"></textarea><br>
 <button type="submit">Submit</button>
 </form>
+
 </section>
 
 <footer>
 <p>© 2026 CSA & Associates. All Rights Reserved.</p>
-<p>Email: csagarwal.associates@gmail.com | Phone: 8755916273</p>
 </footer>
 
 </body>
