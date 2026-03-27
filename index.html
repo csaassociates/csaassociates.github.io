@@ -8,9 +8,9 @@
 <style>
 body {
     margin:0;
-    font-family: 'Segoe UI', Arial;
-    color:#1a1a1a;
+    font-family:'Segoe UI',sans-serif;
     background:#ffffff;
+    color:#222;
 }
 
 /* HEADER */
@@ -54,7 +54,6 @@ nav a {
 }
 
 .hero p {
-    font-size:16px;
     opacity:0.9;
 }
 
@@ -70,36 +69,34 @@ nav a {
 /* SECTION */
 .section {
     padding:80px 10%;
-}
-
-.section h2 {
     text-align:center;
-    margin-bottom:50px;
-    font-size:28px;
 }
 
-/* SERVICES */
-.service-category {
-    margin-bottom:45px;
-}
-
-.service-category h3 {
-    margin-bottom:15px;
-    color:#0A1F44;
-}
-
-.service-list {
+/* GRID */
+.grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:18px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
-.service-list div {
+/* CARD */
+.card {
     background:#f4f6fa;
-    padding:18px;
-    border-radius:8px;
-    font-size:14px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:left;
+}
+
+.card:hover {
+    transform:translateY(-6px);
+}
+
+.card b {
+    display:block;
+    margin-bottom:8px;
+    color:#0A1F44;
 }
 
 /* CONTACT */
@@ -150,82 +147,29 @@ footer {
 </section>
 
 <section class="section" id="services">
-
 <h2>Our Professional Services</h2>
 
-<div class="service-category">
-<h3>Corporate & Secretarial Compliance</h3>
-<div class="service-list">
-<div>Annual ROC Filings & Compliance</div>
-<div>Board & Shareholder Meetings</div>
-<div>Statutory Registers Maintenance</div>
-<div>Corporate Governance Advisory</div>
-</div>
-</div>
+<div class="grid">
 
-<div class="service-category">
-<h3>ROC & XBRL Compliance</h3>
-<div class="service-list">
-<div>XBRL Filing</div>
-<div>Annual Return Filing</div>
-<div>Event-Based Compliance</div>
-</div>
-</div>
+<div class="card"><b>Corporate & Secretarial Compliance</b> Annual ROC filings, board meetings, statutory registers and governance advisory.</div>
 
-<div class="service-category">
-<h3>Tax Services</h3>
-<div class="service-list">
-<div>Income Tax Return (ITR)</div>
-<div>GST Registration & Compliance</div>
-<div>Tax Planning Advisory</div>
-</div>
-</div>
+<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings, annual returns and event-based ROC compliance.</div>
 
-<div class="service-category">
-<h3>Company Incorporation</h3>
-<div class="service-list">
-<div>Private & Public Company</div>
-<div>Section 8 Company</div>
-<div>Producer Company</div>
-</div>
-</div>
+<div class="card"><b>Income Tax & GST</b> ITR filing, GST registration, returns and tax advisory services.</div>
 
-<div class="service-category">
-<h3>Capital Market & SEBI</h3>
-<div class="service-list">
-<div>IPO Advisory (Pre & Post)</div>
-<div>SEBI Compliance</div>
-<div>Due Diligence</div>
-</div>
-</div>
+<div class="card"><b>Company Incorporation</b> Private, Public, Section 8 and Producer Company setup.</div>
 
-<div class="service-category">
-<h3>FEMA & RBI Advisory</h3>
-<div class="service-list">
-<div>FDI / ODI Compliance</div>
-<div>NBFC Advisory</div>
-<div>Foreign Investment Structuring</div>
-</div>
-</div>
+<div class="card"><b>IPO & SEBI Advisory</b> Pre and post listing compliance, due diligence and SEBI regulations.</div>
 
-<div class="service-category">
-<h3>Corporate Advisory</h3>
-<div class="service-list">
-<div>Mergers & Demergers</div>
-<div>Corporate Restructuring</div>
-<div>Secretarial Audit</div>
-</div>
-</div>
+<div class="card"><b>FEMA & NBFC Advisory</b> FDI, ODI, FEMA compliance and RBI advisory services.</div>
 
-<div class="service-category">
-<h3>IBC & Insolvency</h3>
-<div class="service-list">
-<div>CIRP Advisory</div>
-<div>Liquidation Process</div>
-<div>IBC Compliance</div>
-</div>
-</div>
+<div class="card"><b>Corporate Restructuring</b> Mergers, demergers and restructuring advisory.</div>
 
+<div class="card"><b>Secretarial Audit & Due Diligence</b> Compliance audits and due diligence services.</div>
+
+<div class="card"><b>IBC & Liquidation Advisory</b> CIRP, liquidation process and insolvency advisory.</div>
+
+</div>
 </section>
 
 <section class="section" id="contact">
@@ -238,7 +182,6 @@ footer {
 <textarea name="Message" placeholder="Message"></textarea>
 <button class="submit" type="submit">Submit</button>
 </form>
-
 </section>
 
 <footer>
