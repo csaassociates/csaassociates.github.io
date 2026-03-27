@@ -54,21 +54,11 @@ nav a {
 
 .hero h1 {
     font-size:54px;
-    margin-bottom:10px;
 }
 
 .hero p {
     font-size:18px;
     margin-top:10px;
-    opacity:0.9;
-}
-
-/* TRUST LINE */
-.trust {
-    margin-top:15px;
-    font-size:14px;
-    opacity:0.8;
-    letter-spacing:0.5px;
 }
 
 /* GOLD LINE */
@@ -79,6 +69,13 @@ nav a {
     margin:25px auto;
 }
 
+/* TRUST */
+.trust {
+    font-size:14px;
+    opacity:0.85;
+}
+
+/* BUTTON */
 .hero button {
     margin-top:25px;
     padding:14px 34px;
@@ -86,7 +83,6 @@ nav a {
     border:none;
     cursor:pointer;
     font-weight:bold;
-    border-radius:4px;
 }
 
 /* SECTION */
@@ -95,7 +91,7 @@ nav a {
     text-align:center;
 }
 
-/* DARK SERVICES SECTION */
+/* DARK SERVICES */
 .dark-section {
     background:#0A1F44;
     color:white;
@@ -108,19 +104,16 @@ nav a {
     gap:30px;
 }
 
-/* LIGHT PREMIUM CARDS */
+/* CARDS */
 .card {
     background:#ffffff;
     color:#1A1A1A;
     padding:28px;
     border-radius:14px;
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
-    transition:all 0.3s ease;
-    text-align:left;
     position:relative;
 }
 
-/* GOLD ACCENT */
 .card::before {
     content:"";
     position:absolute;
@@ -132,18 +125,24 @@ nav a {
     border-radius:14px 14px 0 0;
 }
 
-.card:hover {
-    transform:translateY(-8px);
-    box-shadow:0 25px 70px rgba(0,0,0,0.25);
-}
-
 .card b {
-    display:block;
-    margin-bottom:10px;
     color:#0A1F44;
 }
 
-/* CONTACT */
+/* CONTACT PREMIUM */
+.contact-section {
+    background:#f4f6fb;
+}
+
+.contact-box {
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
 input, textarea {
     width:100%;
     padding:12px;
@@ -172,7 +171,7 @@ footer {
 
 <header>
 <div class="logo">
-<img src="Logo.png" alt="CSA Logo">
+<img src="Logo.png">
 <h3>CSA & Associates</h3>
 </div>
 
@@ -189,7 +188,7 @@ footer {
 
 <div class="gold-line"></div>
 
-<p class="trust">Trusted advisory partner for corporate, regulatory and compliance matters</p>
+<p class="trust">Trusted for delivering reliable and compliant corporate advisory services</p>
 
 <button onclick="location.href='#contact'">Schedule Consultation</button>
 </section>
@@ -198,31 +197,22 @@ footer {
 <h2>Our Professional Services</h2>
 
 <div class="grid">
-
-<div class="card"><b>Corporate & Secretarial Compliance</b> Annual ROC filings, board and shareholder meetings, statutory registers and governance support.</div>
-
-<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings, annual returns and event-based compliance under Companies Act.</div>
-
-<div class="card"><b>Income Tax & GST</b> Income tax return filing, GST registration, returns and regulatory compliance support.</div>
-
-<div class="card"><b>Company Incorporation</b> Incorporation of Private, Public, Section 8 and Producer Companies.</div>
-
-<div class="card"><b>IPO & SEBI Compliance</b> Pre and post listing compliance, due diligence and SEBI related advisory.</div>
-
-<div class="card"><b>FEMA & RBI Advisory</b> Foreign investment compliance, FEMA regulations and NBFC advisory.</div>
-
-<div class="card"><b>Corporate Restructuring</b> Mergers, demergers and restructuring advisory services.</div>
-
-<div class="card"><b>Secretarial Audit & Due Diligence</b> Secretarial audits, compliance review and due diligence.</div>
-
-<div class="card"><b>IBC & Insolvency Services</b> Advisory in CIRP, liquidation process and insolvency compliance.</div>
-
+<div class="card"><b>Corporate & Secretarial Compliance</b> Annual filings and governance support.</div>
+<div class="card"><b>ROC & XBRL Compliance</b> XBRL filings and ROC compliance.</div>
+<div class="card"><b>Income Tax & GST</b> Tax returns and GST compliance.</div>
+<div class="card"><b>Company Incorporation</b> Private, Public, Section 8 and Producer companies.</div>
+<div class="card"><b>IPO & SEBI Compliance</b> Listing compliance.</div>
+<div class="card"><b>FEMA & RBI Advisory</b> FEMA and NBFC advisory.</div>
+<div class="card"><b>Corporate Restructuring</b> Mergers and restructuring.</div>
+<div class="card"><b>Secretarial Audit</b> Compliance audits.</div>
+<div class="card"><b>IBC & Insolvency</b> CIRP and liquidation.</div>
 </div>
 </section>
 
-<section class="section" id="contact">
+<section class="section contact-section" id="contact">
 <h2>Contact Us</h2>
 
+<div class="contact-box">
 <form action="https://formspree.io/f/mlgoddwb" method="POST">
 <input type="text" name="Name" placeholder="Name" required>
 <input type="email" name="Email" placeholder="Email" required>
@@ -230,6 +220,7 @@ footer {
 <textarea name="Message" placeholder="Message"></textarea>
 <button class="submit" type="submit">Submit</button>
 </form>
+</div>
 
 </section>
 
