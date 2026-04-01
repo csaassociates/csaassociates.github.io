@@ -13,7 +13,6 @@
 body {
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:#ffffff;
     color:#1A1A1A;
 }
 
@@ -45,7 +44,7 @@ header {
 
 nav a {
     color:white;
-    margin-left:30px;
+    margin-left:25px;
     text-decoration:none;
     font-size:14px;
 }
@@ -62,10 +61,6 @@ nav a {
     font-size:46px;
 }
 
-.hero p {
-    font-size:18px;
-}
-
 .gold-line {
     width:80px;
     height:3px;
@@ -76,10 +71,8 @@ nav a {
 .trust {
     font-size:14px;
     line-height:1.8;
-    margin-top:10px;
 }
 
-/* BUTTONS */
 .hero button {
     margin:12px;
     padding:14px 26px;
@@ -94,10 +87,18 @@ nav a {
     color:#0A1F44;
 }
 
+.hero button:hover {
+    opacity:0.9;
+}
+
 /* SECTION */
 .section {
     padding:100px 10%;
     text-align:center;
+}
+
+.section h2 {
+    margin-bottom:20px;
 }
 
 .dark-section {
@@ -173,12 +174,13 @@ footer {
 
 <header>
 <div class="logo">
-<img src="Logo.png">
+<img src="Logo.png" alt="CSA & Associates Logo">
 <h3>CSA & Associates</h3>
 </div>
 
 <nav>
 <a href="#">Home</a>
+<a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -197,12 +199,25 @@ footer {
 ✔ End-to-End Compliance Support
 </p>
 
-<p style="margin-top:15px;font-size:15px;">
+<p style="margin-top:15px;">
 Serving startups, growing businesses and listed entities in compliance matters.
 </p>
 
 <button onclick="location.href='#contact'">Schedule Consultation</button>
 <button class="secondary" onclick="window.open('https://wa.me/918755916273')">Chat on WhatsApp</button>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Us</h2>
+
+<p style="max-width:800px;margin:auto;line-height:1.8;">
+CSA & Associates is engaged in providing corporate, regulatory and compliance advisory services. 
+The firm supports startups, growing businesses and listed entities in navigating regulatory requirements 
+under corporate laws, SEBI regulations and FEMA provisions. 
+Our approach focuses on delivering practical and compliant solutions aligned with business needs.
+</p>
+
 </section>
 
 <!-- SERVICES -->
@@ -294,12 +309,11 @@ Serving startups, growing businesses and listed entities in compliance matters.
 <h2>Industries Served</h2>
 
 <div class="grid">
-
 <div class="card"><p>Startups and emerging businesses</p></div>
 <div class="card"><p>Listed entities and public companies</p></div>
 <div class="card"><p>NBFCs and regulated entities</p></div>
-
 </div>
+
 </section>
 
 <!-- CONTACT -->
