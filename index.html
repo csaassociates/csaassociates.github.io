@@ -94,7 +94,7 @@ nav a {
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* PROFILE */
+/* PROFILE (PHOTO FIXED) */
 .profile {
     display:flex;
     align-items:center;
@@ -106,12 +106,20 @@ nav a {
 
 .profile img {
     width:180px;
-    border-radius:10px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    border-radius:12px;
+    padding:6px;
+    background:linear-gradient(135deg,#ffffff,#eef2f8);
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 @media(max-width:768px){
     .profile { flex-direction:column; text-align:center; }
+}
+
+/* DARK SECTION FIX */
+.dark .card {
+    background:white;
+    color:#1A1A1A;
 }
 
 /* CONTACT */
@@ -182,6 +190,7 @@ footer {
 <!-- SERVICES -->
 <section class="section dark" id="services">
 <h2>Specialized Advisory Services</h2>
+<div class="gold-line"></div>
 
 <div class="grid">
 
@@ -211,6 +220,7 @@ footer {
 <!-- ABOUT -->
 <section class="section light" id="about">
 <h2>About Us</h2>
+<div class="gold-line"></div>
 
 <p style="max-width:900px;margin:auto;line-height:1.9;">
 CSA & Associates is engaged in providing corporate, regulatory and compliance advisory services to startups, growing businesses and listed entities. The firm assists clients in understanding and complying with requirements under corporate laws, SEBI regulations and FEMA provisions.
@@ -221,10 +231,9 @@ The scope of services includes incorporation, regulatory filings, corporate rest
 </p>
 
 <p style="max-width:900px;margin:15px auto;line-height:1.9;">
-CSA & Associates follows a practical approach towards compliance management with focus on timely execution, proper documentation and adherence to applicable laws. The objective is to support businesses in managing regulatory responsibilities effectively while enabling them to focus on their core operations.
+CSA & Associates follows a practical approach towards compliance management with focus on timely execution, proper documentation and adherence to applicable laws.
 </p>
 
-<!-- PROFILE -->
 <div class="profile">
 <img src="./shubham.jpg.jpg" alt="Shubham Agarwal">
 
@@ -235,7 +244,7 @@ Shubham Agarwal is a Company Secretary in practice and the proprietor of CSA & A
 </p>
 
 <p>
-He is involved in assisting startups, growing businesses and listed entities in regulatory compliance, corporate structuring, secretarial matters and governance-related requirements.
+He assists startups, growing businesses and listed entities in regulatory compliance, corporate structuring, secretarial matters and governance-related requirements.
 </p>
 
 <p>
@@ -246,9 +255,10 @@ The practice is driven with an emphasis on timely execution, proper documentatio
 
 </section>
 
-<!-- WHY -->
-<section class="section light2">
+<!-- WHY (NOW DARK PREMIUM) -->
+<section class="section dark">
 <h2>Why CSA & Associates</h2>
+<div class="gold-line"></div>
 
 <div class="grid">
 <div class="card"><b>Focused Practice Areas</b><p>Corporate laws, SEBI and FEMA advisory.</p></div>
@@ -262,6 +272,7 @@ The practice is driven with an emphasis on timely execution, proper documentatio
 <!-- CONTACT -->
 <section class="section light2" id="contact">
 <h2>Contact Us</h2>
+<div class="gold-line"></div>
 
 <div class="contact-box">
 <form action="https://formspree.io/f/mlgoddwb" method="POST">
