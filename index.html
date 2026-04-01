@@ -54,17 +54,16 @@ nav a {
 .hero {
     background:linear-gradient(135deg,#0A1F44,#1d3c85);
     color:white;
-    padding:150px 20px;
+    padding:140px 20px;
     text-align:center;
 }
 
 .hero h1 {
-    font-size:48px;
+    font-size:46px;
 }
 
 .hero p {
     font-size:18px;
-    margin-top:10px;
 }
 
 .gold-line {
@@ -76,21 +75,21 @@ nav a {
 
 .trust {
     font-size:14px;
-    opacity:0.9;
     line-height:1.8;
+    margin-top:10px;
 }
 
 /* BUTTONS */
 .hero button {
-    margin:15px;
-    padding:14px 28px;
+    margin:12px;
+    padding:14px 26px;
     background:#C9A646;
     border:none;
     cursor:pointer;
     font-weight:bold;
 }
 
-.hero button.secondary {
+.hero .secondary {
     background:white;
     color:#0A1F44;
 }
@@ -119,7 +118,6 @@ nav a {
     padding:28px;
     border-radius:14px;
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
-    position:relative;
     transition:0.3s;
 }
 
@@ -127,21 +125,10 @@ nav a {
     transform:translateY(-8px);
 }
 
-.card::before {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:3px;
-    background:#C9A646;
-}
-
 .card b {
     display:block;
     color:#0A1F44;
     margin-bottom:10px;
-    font-size:16px;
 }
 
 /* CONTACT */
@@ -186,7 +173,7 @@ footer {
 
 <header>
 <div class="logo">
-<img src="Logo.png" alt="CSA Logo">
+<img src="Logo.png">
 <h3>CSA & Associates</h3>
 </div>
 
@@ -210,6 +197,10 @@ footer {
 ✔ End-to-End Compliance Support
 </p>
 
+<p style="margin-top:15px;font-size:15px;">
+Serving startups, growing businesses and listed entities in compliance matters.
+</p>
+
 <button onclick="location.href='#contact'">Schedule Consultation</button>
 <button class="secondary" onclick="window.open('https://wa.me/918755916273')">Chat on WhatsApp</button>
 </section>
@@ -223,37 +214,37 @@ footer {
 
 <div class="card">
 <b>Corporate & Secretarial Compliance</b>
-<p>Support in ROC filings, board and shareholder meetings, and statutory compliance requirements.</p>
+<p>Support in ROC filings, board and shareholder meetings and statutory compliance requirements.</p>
 </div>
 
 <div class="card">
 <b>ROC & XBRL Compliance</b>
-<p>Handling of annual filings, event-based filings and XBRL requirements under applicable laws.</p>
+<p>Handling annual filings, event-based filings and XBRL requirements under applicable laws.</p>
 </div>
 
 <div class="card">
 <b>Income Tax & GST</b>
-<p>Assistance in tax filings, GST compliance and regulatory requirements.</p>
+<p>Assistance in tax filings, GST compliance and related regulatory requirements.</p>
 </div>
 
 <div class="card">
 <b>Company Incorporation</b>
-<p>Incorporation of Private, Public, Section 8 and other entities with end-to-end support.</p>
+<p>Incorporation of companies including documentation, approvals and compliance support.</p>
 </div>
 
 <div class="card">
 <b>Conversion of Entities</b>
-<p>Conversion of LLP, Partnership Firms and Societies into Companies including compliance and approvals.</p>
+<p>Conversion of LLPs, Partnership Firms and Societies into Companies including approvals, documentation and post-conversion compliance.</p>
 </div>
 
 <div class="card">
 <b>IPO & SEBI Compliance</b>
-<p>Support in pre and post listing compliances and SEBI regulatory requirements as applicable.</p>
+<p>Support in listing process, due diligence and SEBI regulatory requirements as applicable.</p>
 </div>
 
 <div class="card">
 <b>FEMA & RBI Advisory</b>
-<p>Advisory on foreign investments, FEMA regulations and cross-border transactions.</p>
+<p>Advisory on foreign investments, FEMA compliance and cross-border transactions.</p>
 </div>
 
 <div class="card">
@@ -268,7 +259,7 @@ footer {
 
 <div class="card">
 <b>IBC & Insolvency Services</b>
-<p>Support in CIRP, liquidation and insolvency related processes.</p>
+<p>Support in insolvency processes including CIRP and liquidation.</p>
 </div>
 
 </div>
@@ -298,11 +289,28 @@ footer {
 </div>
 </section>
 
+<!-- INDUSTRIES -->
+<section class="section">
+<h2>Industries Served</h2>
+
+<div class="grid">
+
+<div class="card"><p>Startups and emerging businesses</p></div>
+<div class="card"><p>Listed entities and public companies</p></div>
+<div class="card"><p>NBFCs and regulated entities</p></div>
+
+</div>
+</section>
+
 <!-- CONTACT -->
 <section class="section contact-section" id="contact">
 <h2>Contact Us</h2>
 
-<p>Reach out for a consultation. We typically respond within 24 hours.</p>
+<p style="font-weight:600;color:#0A1F44;">
+Confidential consultation for your business requirements
+</p>
+
+<p>We typically respond within 24 hours</p>
 <p><b>Call:</b> 8755916273</p>
 
 <div class="contact-box">
@@ -318,8 +326,9 @@ footer {
 </section>
 
 <footer>
-<p>© 2026 CSA & Associates. All Rights Reserved.</p>
-<p>Email: csagarwal.associates@gmail.com | Phone: 8755916273</p>
+<p>CSA & Associates | Corporate Compliance Advisory</p>
+<p>Email: csagarwal.associates@gmail.com</p>
+<p>Phone: 8755916273</p>
 </footer>
 
 </body>
