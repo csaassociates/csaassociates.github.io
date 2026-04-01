@@ -9,11 +9,7 @@
 <meta name="description" content="Corporate, SEBI, FEMA and compliance advisory services.">
 
 <style>
-body {
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    color:#1A1A1A;
-}
+body { margin:0; font-family:'Segoe UI',sans-serif; color:#1A1A1A; }
 
 /* HEADER */
 header {
@@ -27,11 +23,7 @@ header {
     top:0;
 }
 
-.logo {
-    display:flex;
-    align-items:center;
-}
-
+.logo { display:flex; align-items:center; }
 .logo img {
     height:50px;
     background:white;
@@ -40,11 +32,7 @@ header {
     margin-right:12px;
 }
 
-nav a {
-    color:white;
-    margin-left:25px;
-    text-decoration:none;
-}
+nav a { color:white; margin-left:25px; text-decoration:none; }
 
 /* HERO */
 .hero {
@@ -63,8 +51,9 @@ nav a {
     margin:25px auto;
 }
 
+/* BUTTON */
 .hero button {
-    margin:12px;
+    margin:10px;
     padding:14px 26px;
     background:#C9A646;
     border:none;
@@ -72,10 +61,7 @@ nav a {
 }
 
 /* SECTIONS */
-.section {
-    padding:100px 10%;
-    text-align:center;
-}
+.section { padding:100px 10%; text-align:center; }
 
 .light { background:#f8f9fc; }
 .light2 { background:#eef2f8; }
@@ -96,7 +82,7 @@ nav a {
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* ABOUT PROFESSIONAL */
+/* PROFILE */
 .profile {
     display:flex;
     align-items:center;
@@ -112,10 +98,7 @@ nav a {
 }
 
 @media(max-width:768px){
-    .profile {
-        flex-direction:column;
-        text-align:center;
-    }
+    .profile { flex-direction:column; text-align:center; }
 }
 
 /* CONTACT */
@@ -160,8 +143,8 @@ footer {
 
 <nav>
 <a href="#">Home</a>
-<a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -176,16 +159,47 @@ footer {
 <button onclick="location.href='#contact'">Schedule Consultation</button>
 </section>
 
-<!-- ABOUT -->
+<!-- SERVICES (FULL RESTORED) -->
+<section class="section dark" id="services">
+<h2>Specialized Advisory Services</h2>
+
+<div class="grid">
+
+<div class="card"><b>Corporate & Secretarial Compliance</b><p>ROC filings, board meetings, statutory registers and governance compliance.</p></div>
+
+<div class="card"><b>ROC & XBRL Compliance</b><p>Annual filings, event-based filings and XBRL compliance.</p></div>
+
+<div class="card"><b>Income Tax & GST</b><p>Income tax returns, GST registration and compliance.</p></div>
+
+<div class="card"><b>Company Incorporation</b><p>Incorporation of Private, Public and Section 8 Companies.</p></div>
+
+<div class="card"><b>Conversion of Entities</b><p>Conversion of LLP, Partnership Firm and Society into Company.</p></div>
+
+<div class="card"><b>IPO & SEBI Compliance</b><p>Listing compliance and SEBI requirements.</p></div>
+
+<div class="card"><b>FEMA & RBI Advisory</b><p>Foreign investment and cross-border transactions.</p></div>
+
+<div class="card"><b>Corporate Restructuring</b><p>Mergers, demergers and restructuring.</p></div>
+
+<div class="card"><b>Secretarial Audit & Due Diligence</b><p>Audit and compliance review.</p></div>
+
+<div class="card"><b>IBC & Insolvency Services</b><p>Insolvency and liquidation support.</p></div>
+
+</div>
+
+</section>
+
+<!-- ABOUT (NOW BELOW SERVICES) -->
 <section class="section light" id="about">
 <h2>About Us</h2>
 
-<p style="max-width:800px;margin:auto;">
-CSA & Associates provides corporate, regulatory and compliance advisory services 
-to startups, growing businesses and listed entities.
+<p style="max-width:850px;margin:auto;line-height:1.9;">
+CSA & Associates is engaged in providing corporate, regulatory and compliance advisory services 
+to startups, growing businesses and listed entities. The firm focuses on assisting clients in complying 
+with requirements under corporate laws, SEBI regulations and FEMA provisions.
 </p>
 
-<!-- PROFESSIONAL -->
+<!-- PROFILE -->
 <div class="profile">
 <img src="your-photo.jpg" alt="Shubham Agarwal">
 
@@ -193,23 +207,10 @@ to startups, growing businesses and listed entities.
 <h3>Shubham Agarwal</h3>
 <p>
 Shubham Agarwal is a Company Secretary engaged in providing advisory and compliance support 
-in corporate laws, SEBI regulations and FEMA matters. 
-He assists clients in regulatory compliance, structuring and governance matters.
+in corporate laws, SEBI regulations and FEMA matters. He assists clients in regulatory compliance, 
+structuring and governance matters.
 </p>
 </div>
-</div>
-
-</section>
-
-<!-- SERVICES -->
-<section class="section dark" id="services">
-<h2>Services</h2>
-
-<div class="grid">
-<div class="card"><b>Corporate Compliance</b><p>ROC filings, board meetings.</p></div>
-<div class="card"><b>IPO & SEBI</b><p>Listing compliance support.</p></div>
-<div class="card"><b>FEMA</b><p>Foreign investment advisory.</p></div>
-<div class="card"><b>Conversion</b><p>LLP/Partnership to Company.</p></div>
 </div>
 
 </section>
