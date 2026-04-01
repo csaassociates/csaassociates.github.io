@@ -48,7 +48,7 @@ nav a {
     font-size:14px;
 }
 
-/* HERO */
+/* HERO (DARK) */
 .hero {
     background:linear-gradient(135deg,#0A1F44,#1d3c85);
     color:white;
@@ -91,7 +91,7 @@ nav a {
     opacity:0.9;
 }
 
-/* SECTION */
+/* SECTION BASE */
 .section {
     padding:100px 10%;
     text-align:center;
@@ -101,12 +101,12 @@ nav a {
     margin-bottom:20px;
 }
 
-/* ABOUT */
-.about-section {
+/* LIGHT SECTION */
+.light-section {
     background:#f8f9fc;
 }
 
-/* SERVICES */
+/* DARK SECTION */
 .dark-section {
     background:#0A1F44;
     color:white;
@@ -139,7 +139,7 @@ nav a {
     margin-bottom:10px;
 }
 
-/* WHY */
+/* WHY (LIGHT BUT DISTINCT) */
 .why-section {
     background:#eef2f8;
 }
@@ -157,7 +157,7 @@ nav a {
     margin:0 auto 20px;
 }
 
-/* INDUSTRY */
+/* INDUSTRY DARK CARDS */
 .industry-card {
     background:#0A1F44;
     color:white;
@@ -190,13 +190,6 @@ button.submit {
     padding:12px 25px;
     border:none;
     border-radius:6px;
-}
-
-/* CS LOGO */
-.cs-logo img {
-    height:60px;
-    margin-top:20px;
-    opacity:0.85;
 }
 
 /* FOOTER */
@@ -242,8 +235,8 @@ footer {
 <button class="secondary" onclick="window.open('https://wa.me/918755916273')">Chat on WhatsApp</button>
 </section>
 
-<!-- ABOUT -->
-<section class="section about-section" id="about">
+<!-- ABOUT (LIGHT) -->
+<section class="section light-section" id="about">
 <h2>About Us</h2>
 
 <p style="max-width:800px;margin:auto;line-height:1.8;">
@@ -252,13 +245,9 @@ The firm supports startups, growing businesses and listed entities in navigating
 under corporate laws, SEBI regulations and FEMA provisions.
 </p>
 
-<div class="cs-logo">
-<img src="cs-logo.png" alt="Company Secretary Logo">
-</div>
-
 </section>
 
-<!-- SERVICES (FULL RESTORED) -->
+<!-- SERVICES (DARK) -->
 <section class="section dark-section" id="services">
 <h2>Specialized Advisory Services</h2>
 
@@ -299,6 +288,18 @@ under corporate laws, SEBI regulations and FEMA provisions.
 
 </section>
 
+<!-- INDUSTRIES -->
+<section class="section">
+<h2>Industries Served</h2>
+
+<div class="grid">
+<div class="card industry-card"><p>Startups and emerging businesses</p></div>
+<div class="card industry-card"><p>Listed entities and public companies</p></div>
+<div class="card industry-card"><p>NBFCs and regulated entities</p></div>
+</div>
+
+</section>
+
 <!-- CONTACT -->
 <section class="section contact-section" id="contact">
 <h2>Contact Us</h2>
@@ -317,7 +318,7 @@ under corporate laws, SEBI regulations and FEMA provisions.
 </section>
 
 <footer>
-<p>CSA & Associates</p>
+<p>© 2026 CSA & Associates. All Rights Reserved.</p>
 <p>Email: csagarwal.associates@gmail.com</p>
 </footer>
 
